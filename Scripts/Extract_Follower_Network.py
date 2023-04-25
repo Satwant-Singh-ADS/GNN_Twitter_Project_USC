@@ -65,6 +65,9 @@ def _reader_generator(reader):
 
 import os
 
+### Keep txt files in current working directory or change code below. Each txt file contains list of twitter screen names. We use twarc follower_ids API to get list of all followers
+
+
 for path in Path("./").iterdir():
     if path.name.endswith('_ids.txt'):
         with open(path) as fin:
